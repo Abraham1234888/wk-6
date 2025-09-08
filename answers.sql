@@ -16,7 +16,7 @@ from products
 
 
 -- combining products table and productLines table using left join
-SELECT p.productCode, p.productName, p.productLine, p.productScale, p.productVendor, p.productDescription,
+SELECT p.productCode, p.productName, p.productLine, p.productScale, p.productVendor, p.productDescription, p.quantityInStock, p.buyPrice, p.MSRP,
  pl.productLine, pl.textDescription, pl.htmlDescription, pl.image
  from products p
  left join productlines pl
